@@ -21,24 +21,113 @@
         </script>
 
         <style>
-            body {
+            a, p, h1, h2, h3, h4 {
                 font-family: a-otf-midashi-go-mb31-pr6n,sans-serif;
                 font-weight: 600;
                 font-style: normal;
             }
+            .shadow {
+                -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+            }
         </style>
     </head>
     <body>
-        <div id="header" class="uk-cover-container uk-height-medium">
+        <div id="header" class="uk-animation-slide-left uk-cover-container uk-height-medium">
             <img src="/img/header.png" alt="" uk-cover>
             <div class="container">
                 <div class="uk-position-large uk-position-center-left uk-light">
                     <h1>どぉもどぉも公式サイト</h1>
+                    <p>A girl dreams of being a musician.</p>
                 </div>
             </div>
         </div>
-        <div id="body" class="uk-container">
-            <h1>Hello! MyName is DomDom</h1>
+        <div id="body">
+            <div style="background-color: #eeeeee;">
+                <div class="uk-container uk-animation-slide-bottom">
+                    <div class="uk-padding-large uk-padding-remove-horizontal">
+                        <h1>Recent works</h1>
+                        <hr class="uk-divider-small">
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; draggable: false">
+        
+                            <ul class="uk-slideshow-items">
+                                <li>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/qVQMNODk70Q?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false; autoplay: false"></iframe>
+                                </li>
+                                <li>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/d_hlvk7sjak?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false; autoplay: false"></iframe>
+                                </li>
+                                <li>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/yNsLLfbGXW0?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false; autoplay: false"></iframe>
+                                </li>
+                                <li>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/Mf39zcoht54?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false; autoplay: false"></iframe>
+            
+                                </li>
+                            </ul>
+                        
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-background-fixed uk-background-cover uk-light" style="background-image: url(img/background.svg);" >
+                <div class="uk-padding-large uk-padding-remove-horizontal">
+                    <div class="uk-container">
+                        <h1>About Me</h1>
+                        <hr class="uk-divider-small">
+                        <p>音楽家になることを夢見て日々作曲中<br>
+                        </p>
+                        <a href="https://twitter.com/infinity_domdom" target="_brank" class="uk-button uk-button-text uk-margin-right">Twitter</a>
+                        <a href="https://www.youtube.com/channel/UCXGeiCaS88oHDoYrxYr1QiQ" target="_brank" class="uk-button uk-button-text uk-margin-right">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: #eeeeee;">
+                <div class="uk-container">
+                    <div class="uk-padding-large uk-padding-remove-horizontal">
+                        <h1>Works</h1>
+                        <hr class="uk-divider-small">
+                        <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+                            <div>
+                                <img src="img/maxresdefault.jpg" class="uk-box-shadow-large" alt="">
+                            </div>
+                            <div>
+                                <img src="img/maxresdefault.jpg" class="uk-box-shadow-large" alt="">
+                            </div>
+                            <div>
+                                <img src="img/maxresdefault.jpg" class="uk-box-shadow-large" alt="">
+                            </div>
+                            <div>
+                                <img src="img/maxresdefault.jpg" class="uk-box-shadow-large" alt="">
+                            </div>
+                            <div>
+                                <img src="img/maxresdefault.jpg" class="uk-box-shadow-large" alt="">
+                            </div>
+                            <div>
+                                <img src="img/maxresdefault.jpg" class="uk-box-shadow-large" alt="">
+                            </div>
+                            <div>
+                                <img src="img/maxresdefault.jpg" class="uk-box-shadow-large" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" style="background-color: #222831;">
+                <div class="uk-padding-large uk-padding-remove-horizontal uk-text-muted">
+                    <div class="uk-container">
+                        <p>(c) 2020 どぉもどぉも<br>
+                        Designed with ♥ by <a href="https://minato86.me" target="_brank">Minami Minato</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
